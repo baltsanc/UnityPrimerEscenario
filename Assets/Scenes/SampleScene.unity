@@ -467,6 +467,7 @@ GameObject:
   - component: {fileID: 178416409}
   - component: {fileID: 178416411}
   - component: {fileID: 178416410}
+  - component: {fileID: 178416412}
   m_Layer: 5
   m_Name: Icono3
   m_TagString: Untagged
@@ -531,6 +532,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178416408}
   m_CullTransparentMesh: 1
+--- !u!114 &178416412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178416408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7e4d7dcb66e14cf9b4e34f0f29fa31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DragDrop
+  canvas: {fileID: 818634780}
 --- !u!1 &295545603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,7 +1399,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 816622585}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1471632485}
+        m_TargetAssemblyTypeName: CambiarFuente, Assembly-CSharp
+        m_MethodName: CambiaFuentes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &816622585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2022,6 +2048,7 @@ GameObject:
   - component: {fileID: 1233172242}
   - component: {fileID: 1233172244}
   - component: {fileID: 1233172243}
+  - component: {fileID: 1233172245}
   m_Layer: 5
   m_Name: Icono1
   m_TagString: Untagged
@@ -2085,7 +2112,20 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233172241}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
+--- !u!114 &1233172245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233172241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7e4d7dcb66e14cf9b4e34f0f29fa31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  canvas: {fileID: 818634780}
 --- !u!1 &1386349226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,6 +2395,7 @@ GameObject:
   - component: {fileID: 1459137600}
   - component: {fileID: 1459137602}
   - component: {fileID: 1459137601}
+  - component: {fileID: 1459137603}
   m_Layer: 5
   m_Name: Icono4
   m_TagString: Untagged
@@ -2419,6 +2460,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459137599}
   m_CullTransparentMesh: 1
+--- !u!114 &1459137603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459137599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7e4d7dcb66e14cf9b4e34f0f29fa31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DragDrop
+  canvas: {fileID: 818634780}
 --- !u!1 &1471632481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2430,6 +2484,7 @@ GameObject:
   - component: {fileID: 1471632482}
   - component: {fileID: 1471632484}
   - component: {fileID: 1471632483}
+  - component: {fileID: 1471632485}
   m_Layer: 5
   m_Name: Contenedor
   m_TagString: Untagged
@@ -2497,6 +2552,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471632481}
   m_CullTransparentMesh: 1
+--- !u!114 &1471632485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471632481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b46d555c5b2d72a4a6406f078875da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CambiarFuente
+  textoTarget: {fileID: 1642368102}
+  fuentes:
+  - {fileID: 11400000, guid: b8d0c668bb6c156c5a6c6ebbf51274e4, type: 2}
 --- !u!1 &1599636924
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,6 +2578,7 @@ GameObject:
   - component: {fileID: 1599636925}
   - component: {fileID: 1599636927}
   - component: {fileID: 1599636926}
+  - component: {fileID: 1599636928}
   m_Layer: 5
   m_Name: Icono2
   m_TagString: Untagged
@@ -2572,6 +2643,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599636924}
   m_CullTransparentMesh: 1
+--- !u!114 &1599636928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599636924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7e4d7dcb66e14cf9b4e34f0f29fa31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DragDrop
+  canvas: {fileID: 818634780}
 --- !u!1 &1642368100
 GameObject:
   m_ObjectHideFlags: 0
