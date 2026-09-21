@@ -15,20 +15,20 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
   }
   
   public void OnBeginDrag(PointerEventData eventData) {
-    Debug.Log("OnBeginDrag");
+    //Debug.Log("OnBeginDrag");
   }
 
   public void OnDrag(PointerEventData eventData) {
-    Debug.Log("OnDrag");
+    //Debug.Log("OnDrag");
     rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
   }
       
   public void OnEndDrag(PointerEventData eventData) {
-    Debug.Log("OnEndDrag");
+    //Debug.Log("OnEndDrag");
   }
   
   public void OnPointerDown(PointerEventData eventData) {
-    Debug.Log("OnPointerDown");
+    //Debug.Log("OnPointerDown");
   }
 
 
